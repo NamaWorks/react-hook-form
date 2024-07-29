@@ -18,6 +18,7 @@ const Form = () => {
 
   const submit = (formData) => {
     console.log(formData)
+    alert("form sent succesfully")
   }
 
   const checkboxWatched = watch("terms")
@@ -126,8 +127,7 @@ const Form = () => {
                 {...register("newsletter",
                   {
                     required:{
-                      value: true,
-                      message: "You must add a username",
+                      value: false,
                     }
                   }
                 )}
